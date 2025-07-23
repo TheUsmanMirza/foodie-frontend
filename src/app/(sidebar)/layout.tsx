@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { usePathname, useRouter } from "next/navigation";
+import { useRouter } from "next/navigation";
 import Sidebar from "@/app/_components/sidebar";
 import Header from "@/app/_components/header";
 import Loader from "@/shared/loader";
@@ -13,7 +13,6 @@ export default function SidebarLayout({
 }) {
   const [isLoading, setIsLoading] = useState(true);
   const router = useRouter();
-  const pathname = usePathname();
 
   useEffect(() => {
     const token = localStorage.getItem("authToken");
