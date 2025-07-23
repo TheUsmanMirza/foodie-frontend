@@ -32,9 +32,10 @@ const Header = () => {
             <BsPersonCircle className="text-xl" />
           </div>
           <div>
-            <p className="text-sm text-gray-500">Welcome back,</p>
-            <p className="font-semibold text-gray-900">
-              {data?.name || "Foodie"}
+            <p className="text-sm text-gray-500">Welcome{" "}
+              <span className="font-semibold text-gray-900">
+                {data?.name || "Foodie"}
+              </span>
             </p>
           </div>
         </div>
