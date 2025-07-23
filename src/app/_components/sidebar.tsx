@@ -71,29 +71,18 @@ const Sidebar = () => {
         })}
       </nav>
 
-      {/* User Section with Logout */}
-      <div className="p-4 border-t border-orange-500/30">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-3">
-            <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">
-              <span className="text-white text-sm font-medium">U</span>
-            </div>
-            <div>
-              <p className="text-white font-medium text-sm">User</p>
-              <p className="text-white/60 text-xs">user@example.com</p>
-            </div>
-          </div>
-          
-          {/* Logout Button */}
-          <button
-            onClick={handleLogout}
-            className="p-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg transition-all duration-200"
-            title="Logout"
-          >
-            <BsBoxArrowRight className="text-lg" />
-          </button>
-        </div>
-      </div>
+      {/*  Logout */}
+<div className="p-4 border-t border-orange-500/30">
+  <button
+    onClick={handleLogout}
+    className="w-full flex items-center space-x-3 p-3 rounded-lg transition-all duration-200 group text-white/80 hover:bg-white/10 hover:text-white"
+  >
+
+    <span className="font-medium flex-1 text-left">Logout</span>
+    <BsBoxArrowRight className="text-lg group-hover:text-white" />
+  </button>
+</div>
+
     </div>
   );
 };
